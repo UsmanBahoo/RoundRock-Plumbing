@@ -228,6 +228,34 @@ header{
             display: block;
             margin: 0 auto;
         }
+         .Services-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 30px 0;
+    }
+    .Services-border {
+        width: 100% !important;
+        max-width: 350px;
+        margin: 0 auto;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        border-radius: 30px;
+    }
+    .Services-img {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Services-img img {
+        max-width: 60px;
+        height: auto;
+    }
 }
 .Services{
     background-image:url(../Image/Group1.png);
