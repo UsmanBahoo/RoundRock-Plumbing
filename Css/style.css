@@ -415,7 +415,7 @@ header{
     align-items: center;
     gap:10px;
 }
-.Contact ul {
+.Contact ul{
     margin:0;
     padding:0;
 }
@@ -425,7 +425,7 @@ header{
 }
 .Contact ul li em{
     margin:0;
-    padding:0 20px;
+    padding:0 10px;
     color: var(--gray-1, #333);
     font-family: TT Hoves;
     font-size: 14px;
@@ -433,6 +433,48 @@ header{
     font-weight: 500;
     line-height: normal;
 }
-.box{
-    background-color: #FFF;
+/* Responsive styles for Contactus-main and Contact ul */
+@media (max-width: 991.98px) {
+    .Contactus-main {
+        flex-direction: row;
+        padding: 32px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .Contact ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .Contact ul li {
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .Tm-heading h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    .Contactus-main {
+        padding: 16px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .Contact ul {
+        gap: 4px;
+        justify-content: center;
+        align-items: center;
+    }
+    .Contact ul li {
+        font-size: 12px;
+        padding: 6px 0;
+    }
+    .Contact ul li em {
+        font-size: 12px;
+        padding: 0 6px;
+    }
 }
